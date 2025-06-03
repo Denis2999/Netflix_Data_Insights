@@ -1,43 +1,143 @@
 # Netflix_Data_Insights
 
-## Overview
-This project analyzes my family's Netflix activity data to explore viewing habits, trends, and patterns. The goal is to build a data pipeline to process, transform, and derive insights from the dataset while enhancing skills in data engineering and data science.
+## 🚀 Overview
 
-## Objectives
-- Simulate an ETL (Extract, Transform, Load) process.
-- Analyze viewing patterns and behaviors.
-- Visualize data insights through interactive dashboards.
+This project delves into my family's Netflix viewing activity to uncover fascinating habits, trends, and patterns. It serves as a practical application of data engineering and data science principles, focusing on building a robust data pipeline to extract, transform, load (ETL), and analyze personal viewing data.
 
-## Tools and Technologies
-- Python
-- Pandas
-- Numpy
-- Data Visualization (Matplotlib/Seaborn)
+## 🎯 Objectives
 
-Netflix allows the downloading of personal behaviour data. This data can be analysed to gain insights into your viewing behaviour.
-The purpose of this notebook is to practice some data visualisation on Netflix's personal behaviour data.
+* **Simulate an ETL Process:** Practice and demonstrate foundational data engineering skills by processing raw Netflix activity data.
+* **Analyze Viewing Patterns:** Uncover insights into content preferences, peak viewing times, and duration trends across different profiles.
+* **Visualize Data Insights:** Create clear and **interactive** visualizations to present findings, making complex data easily understandable.
 
-To download your data from Netflix, follow these steps:
-- Log in to your Netflix account and go to the "Account" page or just follow this address: https://www.netflix.com/account/security
-- In the "Access and Privacy" table there will be "Personal info access". Click on it
-- Click on the "Submit request" button at the bottom of the page. You will receive an email from Netflix to accept the terms for downloading personal information.
+## 🛠️ Technologies & Tools
+
+* **Python:** The core programming language for data manipulation and analysis.
+* **Pandas:** Essential for efficient data loading, cleaning, and transformation.
+* **NumPy:** For numerical operations within data analysis.
+* **Matplotlib & Seaborn:** For static data visualizations.
+* **Plotly Express:** For creating **interactive** and dynamic data visualizations that allow for detailed exploration (e.g., hover information).
+
+## 📊 Key Insights
+
+This project summarizes approximately four years of Netflix activity, from early 2022 to mid-2025.
+
+### Movies & TV Shows
+
+* **Total Watch Time:** Over 80 hours of content watched, with a strong preference for TV shows.
+* **Content Preference:** My family generally watches more TV shows than movies.
+* **Personal Top Content:**
+    * **Longest (re)watched movie:** "The Patriot"
+    * **Longest (re)watched TV shows:** "Love, Death & Robots" and "Turning Point: The Bomb and the Cold War"
+* **Family Favorites:** "All Quiet on the Western Front" is the most (re)watched movie across the family.
+* **Viewing Habits:** The analysis reveals popular viewing times for different family members and their content preferences (movies vs. mobile games).
+* **Unusual Activity Explained:** Insights into peculiar viewing patterns, such as the mysterious early morning activity for one profile, suggest potential background playback or accidental starts rather than active viewing.
+
+### Mobile Games
+
+* **Favorite Games:** "Cats & Soup" is a family favorite, while "Dead Cells" (my preferred game) boasts over 25 hours of gameplay.
+* **Peak Gaming Times:** Most game sessions occur in the morning, evening, and during lunchtime.
+
+## 📈 Visualizations
+
+Below are some of the visualizations generated in this project, showcasing various aspects of the Netflix viewing data.
+
+### Movies & TV Shows Visualizations
+
+* **Most (re)watched films (hours) across family**
+    ![Most (re)watched films (hours) across family](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/most_rewatched_films.png)
 
 
-After some time you will be able to download your data. In my case, it took them half a day.
+* **Netflix Viewing Sessions by Day of Week**
+    ![Netflix Viewing Sessions by day of week](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/day_of_week_sessions.png)
 
-For the running Jupyter Notebook, it is required to put data in the same folder as the repository and download requirements from requirements.txt. I suggest creating a virtual environment.
+
+* **Total Netflix Watching Time (hours) by Year and Month**
+    ![Total Netflix watching time (hours) by year and month](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/year_month_watching_time.png)
 
 
-Here are my movie insights:
-- The data is summarised for four years. From the beginning of 2022 till 2025. During this time, I watched total a of 80 hours and most of them were TV shows
-- Based on my Netflix viewing data, it appears that I tend to watch more TV shows than movies.
-- The longest (re)watched movie for me  was "The Patriot"
-- Two of the longest (re)watched TV shows for me  were "Love, Death & Robots" and "Turning Point: The Bomb and the Cold War"
-- The most (re)watched movie across the family is "All Quiet on the Western Front"
-Here, you can also see the most popular time you use Netflix. And your family members. Also, you can see the other family members' preferences in movies and mobile games.
+* **Netflix Viewing Sessions per Year**
+    ![Netflix Viewing Sessions per year](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/per_year_sessions.png)
 
-Here are my personal mobile games insights:
-- One of the family members loves to play "Cats & Soup"
-- I see my preferred game "Dead Cells" in the second place. More than 25 hours of gameplay
-- The most popular game sessions are in the morning, evening and lunchtime
 
+* **Netflix Viewing Sessions by Hour of Day (by Profile)**
+    ![Netflix Viewing Sessions by Hour of Day (by Profile)](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/hour_of_day_sessions.png)
+
+### Top TV Shows per Profile
+
+This section presents the top 5 most-watched TV shows for each family member by total watch time, providing detailed insights into individual preferences.
+
+```
+Top 5 Most Watched TV Shows for Each User Profile (by total time):
+================================================================================
+Profile: Denis
+--------------
+  - Turning Point: 10h 18m
+  - Love, Death & Robots: 06h 55m
+  - The Gentlemen: 06h 32m
+  - BLUE EYE SAMURAI: 06h 26m
+  - Arcane: 06h 03m
+================================================================================
+Profile: Parker
+------------
+  - Sprzątaczka: 08h 38m
+  - Żmijowisko: 06h 01m
+  - Heartstopper: 03h 26m
+  - Johnny English: 01h 24m
+  - Przeznaczenie: 00h 12m
+================================================================================
+Profile: Pelikan
+---------------
+  - Wikingowie: 26h 21m
+  - Sex Education: 20h 47m
+  - Stranger Things: 13h 55m
+  - House of Cards: 09h 16m
+  - Wednesday: 08h 58m
+================================================================================
+Profile: Pilot
+----------------
+  - Orange Is the New Black: 86h 07m
+  - Outlander: 77h 27m
+  - The 100: 68h 23m
+  - Kochane kłopoty: 63h 10m
+  - Sześć stóp pod ziemią: 53h 33m
+================================================================================
+```
+### Games Visualizations
+
+* **Total Netflix Game Time Per Profile**
+    ![Total Netflix Game Time Per Profile](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/game_time_per_profile.png)
+
+* **Top 10 Games by Total Play Time**
+    ![Top 10 Games by Total Play Time](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/total_play_time.png)
+
+* **Netflix Game Sessions by Hour of Day**
+    ![Netflix Game Sessions by Hour of Day](https://github.com/Denis2999/Netflix_Data_Insights/blob/main/img/sessions_in_a_day.png)
+
+## 📦 How to Replicate
+
+To run this analysis and generate the insights yourself, follow these steps:
+
+1.  **Download Your Netflix Data:**
+    * Log in to your Netflix account and go to the "Account" page or directly follow this address: [https://www.netflix.com/account/security](https://www.netflix.com/account/security).
+    * In the "Access and Privacy" section, click on "Personal info access."
+    * Click the "Submit request" button at the bottom of the page. You will receive an email from Netflix to accept the terms for downloading personal information.
+    * After some time (it can take up to half a day), you will receive another email with a link to download your data.
+    * Locate the `ViewingActivity.csv` file within the downloaded data archive.
+
+2.  **Project Setup:**
+    * Clone this GitHub repository to your local machine.
+    * Place the `ViewingActivity.csv` file (and potentially `Games.csv` if available) into the main project directory.
+    * **Create a virtual environment** (highly recommended) for dependency management:
+        ```bash
+        python -m venv venv
+        source venv/bin/activate  # On Windows: venv\Scripts\activate
+        ```
+    * **Install required packages** from `requirements.txt`:
+        ```bash
+        pip install -r requirements.txt
+        ```
+
+3.  **Run the Analysis:**
+    * Open the Jupyter Notebook (e.g., `Netflix_Data_Insights.ipynb`) in your preferred environment.
+    * Run all cells to execute the data processing, analysis, and visualization steps.
